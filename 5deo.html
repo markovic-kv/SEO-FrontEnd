@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<title>V - SEO alati i protokoli</title>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="5deo.css">
+
+</head>
+<body>
+
+   <nav class="navbar navbar-default navbar-fixed-top"> <!-- also: navbar-fixed-top; navbar-fixed-bottom -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sandwich" aria-expanded="false"> 
+        <!-- sandwich button when on mobile -->
+          
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="pull-left" href="index.html"><img id="icon" src="imgs\seo-icon.png" id="SeoIcon"></a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="sandwich">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Početna</a></li>
+          <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SEO tehnike<span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             	<li><a href="1deo.html">I - Crawler, Index, Rang</a></li>
+             	<li><a href="2deo.html">II - Dizajniranje sajta za pretraživače</a></li>
+             	<li><a href="3deo.html">III - Kvalitet i rang</a></li>
+             	<li><a href="4deo.html">IV - Linkovi</a></li>
+             	<li  class="active"><a href="5deo.html">V - SEO alati i protokoli<span class="sr-only">(current)</span></a></li>
+             	<li><a href="6deo.html">VI - Spamovanje i mitovi</a></li>
+             	<li><a href="7deo.html">VII - Analitika</a></li>
+           </ul>
+          </li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control srch" placeholder="Pretraži">
+            <button type="submit" class="btn btn-default srch_btn"><span class="glyphicon glyphicon-search"></span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+<br>
+
+<div class="page-heading">
+		<h2>V - SEO alati i protokoli</h2>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+			<h3>SEO protokoli</h3>
+			<div id="line"></div>
+			<p><b>robots.txt fajl</b><br>
+			Ovaj fajl daje instrukcije crawler-ima pretraživača kako da se ponašaju kada pristupe vašem sajtu, robots.txt se smešta u root direktorijum Web sajta. Pomoću ovog fajla možete reći pretraživaču koje stranice ne želite da budu skenirane od strane crawler-a, možete takođe odrediti kojom brzinom se crawler može kretati kroz vaš sajt, kao i putanju do vaše mape sajta.
+			Pazite kad pravite robots.txt, jer neki crawleri mogu da ignorišu uputstva. Neko može namerno napraviti "robota" koji ignoriše robots.txt da bi izvukao poverljive informacije, zbog toga izbegavajte pisanje nepotrebnih informacija u ovaj fajl.
+			</p>
+			<p>
+			<b>Mapa sajta</b><br>
+			Mapa sajta je spisak svih stranica sajta, mogu je videti i korisnici i pretraživači. Može biti veoma korisno da se napravi mapa sajta jer ona pomaže pretraživačima da skeniraju svaku stranicu vašeg sajta. Mape sajta su često hijerarhijski organizovane. <br>
+			Postoji nekoliko vrsta mape sajta, XML format najviše se koristi 
+			<ol>
+				<li>XML - format koji se najviše koristi, ali fajlovi mogu biti veliki</li>
+				<li>txt fajl - lako se implemetira, ali mu se mogu dodavati meta podaci</li>
+				<li>RSS(Rich Site Summary) - lako se održava, teško se njime upravlja </li>
+			</ol>
+			</p>
+			<p>
+			<b>Meta roboti</b><br>
+			Meta roboti se postavljaju u head tag i služe da crawler-ima daju uputstva na nivou stranice. Primer meta robota: &ltmeta name="ROBOT" content="ARGUMENT"/&gt. Kao argumenti mogu se koristiti atributi noindex (ne indeksira stranicu), nofollow (ne prati nijedan link na stranici), noarchive (ne čuva keš), itd.. Možete koristiti sledeći primer da kažete pretraživaču da ne prati određene linkove na vašoj stranici: &lta href="website.com" rel="nofollow"&gt.
+			</p>
+
+			<h3>Alati pretraživača</h3>
+			<div id="line"></div>
+			<p>Pogledaćemo šta vam Google nudi kao pomoć pri implemetiranju SEO:<br>
+			<b>Malware</b><br>
+			Malware je loš i za korisnike i za vas jer vam može spustiti rang. Google vas može obavestiti ukoliko imate malware na vašem sajtu.<br>
+			<b>Greške pri skeniranju</b><br>
+			Ukoliko crawler naleti na neke greške dok skenira vaš sajt Google će vas obavestiti.<br>
+			<b>Geografska lokacija</b><br>
+			Ukoliko želite Google može postaviti različite verzije sajta u zavisnosti sa koje geografske lokacije korisnik pristupa vašem sajtu.<br>
+			<b>Parametri u URL</b><br>
+			Moguće je Google-u dati informacije o vašem sajtu u URL-u. Ovo pomaže Google-u da se lakše kreće kroz vaš sajt.<br>
+			<b>Željeni domen</b><br>
+			Ukoliko želite da određeni domen bude domen početne stranice vašeg sajta možete taj domen dati Google-u. Ukoliko neko naiđe na link ka vašem sajtu http://vassajt.com/home, a vaš željeni domen je http://www.vassajt.com, Google će smatrati da je taj korisnik kliknuo na http://www.vassajt.com.<br>
+			<b>HTML predlozi</b><br>
+			Google čak može da protumači vaše HTML tagove, i predloži vam one koji nisu dovoljno dobri za SEO.<br><br>
+			Ovde možete pristupiti <a href="https://www.google.com/webmasters/tools/home" title="Google console">Google konzoli</a>, koja vam omogućava korišćenje ovih alata, potreban vam je Google nalog.
+			
+			</p>
+
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<img src="imgs/right-banner-robot.png" id="robot-banner" alt="Robots, Sitemap" title="Robots, Sitemap">
+		</div>
+	</div>
+</div>
+<div class="jumbotron" id="footer-div">
+	<footer>
+	
+		<img id="footer-img" src="imgs\seo-icon-b.png" id="SeoIcon-b">
+		<a href="index.html">Početna</a>
+		<a href="contact.html">Kontakt</a>
+
+		<div class="row text-center">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<ul class="footer-list">
+						<li><a href="1deo.html">I - Crawler, Index, Rank</a></li>
+             	<li><a href="2deo.html">II - Dizajniranje sajta za pretraživače</a></li>
+             	<li><a href="3deo.html">III - Kvalitet i rang</a></li>
+             	<li><a href="4deo.html">IV - Linkovi</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<ul class="footer-list">
+             	<li><a href="5deo.html">V - SEO alati i protokoli</a></li>
+             	<li><a href="6deo.html">VI - Spamovanje i mitovi</a></li>
+             	<li><a href="7deo.html">VII - Analitika</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<p style="font-size: 14px;">Ivan Marković, e-mail: ivan.durdenkv@gmail.com</p>
+			</div>
+	</footer>
+</div>		
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

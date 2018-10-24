@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<title>II - Dizajniranje sajta za pretraživače</title>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="2deo.css">
+
+
+</head>
+<body>
+
+   <nav class="navbar navbar-default navbar-fixed-top"> <!-- also: navbar-fixed-top; navbar-fixed-bottom -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sandwich" aria-expanded="false"> 
+        <!-- sandwich button when on mobile -->
+          
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="pull-left" href="index.html"><img id="icon" src="imgs\seo-icon.png" id="SeoIcon"></a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="sandwich">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Početna</a></li>
+          <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SEO tehnike<span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="1deo.html">I - Crawler, Index, Rang</a></li>
+             <li class="active"><a href="2deo.html">II - Dizajniranje sajta za pretraživače<span class="sr-only">(current)</span></a></li>
+             <li><a href="3deo.html">III - Kvalitet i rang</a></li>
+             <li><a href="4deo.html">IV - Linkovi</a></li>
+             <li><a href="5deo.html">V - SEO alati i protokoli</a></li>
+             <li><a href="6deo.html">VI - Spamovanje i mitovi</a></li>
+             <li><a href="7deo.html">VII - Analitika</a></li>
+           </ul>
+          </li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control srch" placeholder="Pretraži">
+            <button type="submit" class="btn btn-default srch_btn"><span class="glyphicon glyphicon-search"></span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+<br>
+
+<div class="page-heading">
+		<h2>II - Dizajniranje sajta za pretraživače</h2>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+			<h3>Sadržaj koji se indeksira</h3>
+			<div id="line"></div>
+			<p>Da bi sajt bio pregledniji pretraživačima bitno je da se oslanjamo na HTML tekstualne formate. Sve što nema neki tekst vezan sa sebe, biće ignorisano od strane crawler-a pretraživača; tu spadaju Flash animacije, slike, itd. Da bi se uverili da tekstove koje vide posetioci sajta vide i pretraživači treba ih staviti u HTML tekst na strani. <br><br>
+			Takođe se možete osloniti da malo naprednije metode:
+				<div class="panel-group" id="accordion">
+ 				 <div class="panel panel-default">
+    			<div class="panel-heading">
+      			<h4 class="panel-title">
+        		<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+    					Koristite alt tekst za slike.</a>
+      			</h4>
+    			</div>
+    			<div id="collapse1" class="panel-collapse collapse in">
+      			<div class="panel-body">Uz slike koristite alt atribut koji određenoj slici dodaje tekst. Pretraživači čitaju taj tekst i uzimaju ga u obzir kad rangiraju vaš sajt.</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        				Dodajte tekst stranicama sa Java i Flash sadržajem.</a>
+      			</h4>
+    			</div>
+    			<div id="collapse2" class="panel-collapse collapse">
+      			<div class="panel-body">Pošto pretraživač ne "čita" Java i Flash sadržaj poželjno je dodati im neki tekst koji opisuje taj sadržaj. Tako pretraživač može indeksirati tu stranicu.</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        				Iskucajte sadržaj audio i video fajlova.</a>
+      			</h4>
+    			</div>
+    		<div id="collapse3" class="panel-collapse collapse">
+      		<div class="panel-body">Najbolje bi bilo da iskucate ceo transkript video ili audio sadržaja. Ali možete i tekstualno opisati radnju video snimka, ili sažeto opisati o čemu se priča u audio fajlu.</div>
+    			</div>
+  			</div>
+			</div> 
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<img src="imgs/SEO-friendly.jpg" id="nulamob" alt="SEO-friendly" title="SEO-friendly">
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h3>Razlike između ljudi i pretraživača</h3>
+			<div id="line"></div>
+			<p>Pretraživač ne vidi Web stranu kao što je mi vidimo. Poželjno je proveriti vaš sajt, da bi videli koji sadržaj pretraživači mogu indeksirati. To možete proveriti korišćenjem <a href="http://cachedview.com/">Google Cache browsera</a>. Sad ćemo pogledati kako sajt FTN-a u Čačku izgleda posetiocima, a kako pretraživačima.
+				<div id="d-img">
+					<a href="http://www.ftn.kg.ac.rs/"><img class="center-block" src="imgs\FTN.png" title="FTN Cacak" alt="http://www.ftn.kg.ac.rs/"></a>
+					<p>Kako posetioci vide Web sajt</p>
+				</div>			
+				<div id="dd-img">
+					<a href="http://webcache.googleusercontent.com/search?q=cache:http://www.ftn.kg.ac.rs/&num=1&strip=1&vwsrc=0"><img class="center-block" src="imgs\FTN-cache.png" title="FTN Cacak Cache" alt="http://webcache.googleusercontent.com/search?q=cache:http://www.ftn.kg.ac.rs/&num=1&strip=1&vwsrc=0"></a>
+					<p>Kako pretraživač vidi Web sajt</p>
+				</div>
+			</p>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+			<h3>Struktura linkova</h3>
+			<div id="line"></div>
+			<p>Pored sadržaja Web sajta, pretraživači moraju imati pristup i linkovima da bi uopšte mogli da stignu do tih stranica. Veliki broj sajtova prave grešku kada naprave navigaciju kroz sajt kojoj pretraživači ne mogu da pristupe. Zato se prave takozvane strukture linkova optimizovane za pretragu. Ovakva struktura dopušta crawler-ima da pretražuju puteve kroz Web sajt, ovo je veoma bitno za pronalaženje svih stranica Web sajta.<br>
+			</p>
+			<p>Neki od razloga što pretraživači ne vide linkove mogu biti:
+			 <ul class="list-group">
+ 					<li class="list-group-item">Crawleri ne vide ili pridodaju malo značaja linkovima u JavaScript-u. Linkove treba pisati u HTML-u</li>
+  				<li class="list-group-item">Linkovi u Flash i Java sadržaju neće biti dostupni crawler-ima, zbog toga ih treba izbegavati</li>
+ 					<li class="list-group-item">Ukoliko postoji Submit forma pre ulaska na sajt, pretraživači će verovatno izbegavati taj sajt</li>
+ 					<li class="list-group-item">Takođe pretraživači ne mogu korstiti Pretragu kao ljudi, crawleri ne mogu da koriste formu sa pretragom</li>
+ 					<li class="list-group-item">Ukoliko stranica ima stotine ili hiljade linkova verovatno neće biti indeksirane</li>
+				</ul> 
+			</p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<div class="input-group input-group-sm">
+				<p>Na ovoj slici vidimo da iako Google pristupa glavnoj strani sajta, on ne može pristupiti dvema crvenih strana jer nisu direktno linkovane sa ostalim stranicama sajta.</p>
+				<img src="imgs/crawlable-link-structure.png" id="crw" class="center-block" title="Crawlable Link Structure" alt="Crawlable Link Structure">
+  		</div>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+			<h3>Ključne reči</h3>
+			<div id="line"></div>
+			<p>Čitava nauka za pretragu podataka je bazirana na ključnim rečima. Ovo važi i za Online pretragu, ključne reči su osnova u procesu pretrage. Crawler-i koji skeniraju sajtove i indeksiraju sadržaj, pamte ključne reči i smeštaju ih u milione manjih baza podataka, svaka od tih baza podataka je za određenu ključnu reč ili izraz. Ovako ne moraju da pretražuju ogromne baze podataka sa svih podacima sa Web sajtova, već mogu u deliću sekunde dostaviti rezultate pretrage koristeći ključne reči i izraze.
+			</p>
+			<p>Kao što smo rekli ključne reči su glavne kod internet pregtrage, šta god da unesemo pretraživač će tražiti ključne reči raznih sajtova i izbaciti rezultate koji se najbolje poklapaju sa traženim terminom. Redosled reči i znaci interpunkcije daju pretraživaču dodatne informacije koje pomažu da se dobije pravi rezultat. Pretraživači upoređuju ključne reči sa čitavim sajtom i tako određuju bitnost ključnih reči, da bi vam ključne reči bile bolje rangirane koristite ih često u title tagu i tekstu. Što su vam ključne reči određenije i preciznije imaćete bolji rang.
+			</p>
+			<p>Mnogi ljudi pokušavaju da prevare SEO tehnike, i u početku internet pretrage te metode su radile. Čuvena metoda je punjenje teksta, pa i celog dokumenta ključnim rečima. U početku sistemi za SEO nisu bili toliko razvijeni pa je ovo prolazilo, međutim vremenom algoritam je napredovao i to više ne funkcioniše. Dr. Edel Garcia je još 2005. godine dokazao da je punjenje teksta ključnim rečima uzaludno, <a href="http://www.e-marketing-news.co.uk/Mar05/garcia.html">ovde</a> možete pročitati njegovo objašnjenje (na engleskom).<br>
+			Najbolji sistem je prirodno koristiti ključne reči i ne preterivati. Nije poenta da sve ključne reči budu dobro rangirane, već da glavne ključne reči budu visoko rangirane da bi ljudi preko njih lakše našli vaš sajt.	
+			</p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<div class="input-group input-group-sm">
+				<img src="imgs/SEO-keywords.png" id="hidesm" style="width: 90%;margin-top: 20px;" class="center-block" title="SEO Keywords" alt="SEO Keywords">
+  		</div>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+			<h3 style="margin-top: 0;">Optimizacija</h3>
+			<div id="line"></div>
+			<h4>Title tag</h4>
+			<p>Title tag je veoma bitan kod SEO. Sve što napišete u title tagu treba biti tačno, koncizno i ne previše dugačko, ključnu reč treba staviti u title tag najamanje jedanput. Stavite bitnije reči na početak taga, korisnici imaju običaj da čitaju prvih par reči izbačenih rezultata, i zato je bitno da ključne i bitne reči stavite na početku title taga. Pretraživač korisnicima prikazuje prvih 75 karaktera, ovo je dobro imati na umu, ali ukoliko imate dugačku ključnu reč ili više njih možete preći ovo ograničenje. Uverite se da je naslov lako čitljiv i poželjno je da u korisnicima izaziva pozitivna osećanja.</p>
+			<h4>Meta tag</h4>
+			<p>Meta tagovi služe da pretraživačima daju informacije o vašem sajtu. Tu postoje i meta "roboti" koji mogu kontrolisati kako se crawler kreće kroz vaš sajt. Meta "roboti" koriste razne atribute za kontrolisanje crawler-a, neki od tih atributa su: noarchive, nosnippet, follow, nofollow, index, noindex, itd..<br>
+			<b>Meta opis</b> se pojavljuje ispod na pretraživaču ispod title taga. Ključne reči i izrazi u meta opisu nisu bitne, jer ih pretraživač ne gleda. Ovde jednostavno treba napisati neki kraći opis vašeg sajta koji bi možda privukao neke korisnike koji nisu 100% sigurni šta traže. Ovaj tag može biti bilo koje dužine ali pretraživač neće prikazati više od 160 karaktera.
+			</p>
+			<h4>URL</h4>
+			<p>URL predstavlja adresu Web sajta, i ta adresa se vidi među rezultatima pretraživača. URL adresa može pomoći rangiranju Web sajta, ukoliko se traženi termin poklapa sa delom URL adrese, pretraživači će to upamtiti i modifikovati rang sa tim u vidu.</p>
+			<p>Kod URL-a je bitno da bude čitljiv i što je moguće razumniji za korisnike, takođe poželjno je da u sebi ima informacije vezane za sadržaj strane. Dobar primer URL-a možemo naći na Web sajtu <a href="http://www.ftn.kg.ac.rs/">FTN-a u Čačku</a>; ukoliko pristupimo sajtu i odemo na stranicu Osnove studije vidimo da je URL <a href="http://www.ftn.kg.ac.rs/studije/osnovne">http://www.ftn.kg.ac.rs/studije/osnovne</a>, dakle reči koje imaju smisla i vezane su sadržaj na toj strani. Još jedna stvar, poželjno je za razmak između reči u URL-u koristiti horizontalnu crtu (-) jer drugi znaci mogu biti interpretirani na različite načine (primer: <a href="http://www.ftn.kg.ac.rs/studije/raspored-nastave">http://www.ftn.kg.ac.rs/studije/raspored-nastave</a>).</p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<img src="imgs/meta-desc.png"  class="center-block" id="nulamob" title="Meta Description" alt="Meta Description">
+		</div>
+	</div>
+</div>
+<div class="jumbotron" id="footer-div">
+	<footer>
+	
+		<img id="footer-img" src="imgs\seo-icon-b.png" id="SeoIcon-b">
+		<a href="index.html">Početna</a>
+		<a href="contact.html">Kontakt</a>
+
+		<div class="row text-center">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<ul class="footer-list">
+						<li><a href="1deo.html">I - Crawler, Index, Rank</a></li>
+             	<li><a href="2deo.html">II - Dizajniranje sajta za pretraživače</a></li>
+             	<li><a href="3deo.html">III - Kvalitet i rang</a></li>
+             	<li><a href="4deo.html">IV - Linkovi</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<ul class="footer-list">
+             	<li><a href="5deo.html">V - SEO alati i protokoli</a></li>
+             	<li><a href="6deo.html">VI - Spamovanje i mitovi</a></li>
+             	<li><a href="7deo.html">VII - Analitika</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<p style="font-size: 14px;">Ivan Marković, e-mail: ivan.durdenkv@gmail.com</p>
+			</div>
+	</footer>
+</div>	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

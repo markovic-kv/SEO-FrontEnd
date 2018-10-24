@@ -1,0 +1,62 @@
+label{
+	margin-top: 25px;
+	color: #fff;
+}
+legend{
+	color: #fff;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+form{
+	height: 100%
+}
+.item{
+	margin-top: 20px;
+}
+.well{
+	margin-top: 20px;
+	height: 430px;
+	background-color: #5A6EAD;
+}
+.btn-lg{
+	margin-top: 10px;
+}
+
+#pw{
+	color: #fff !important;
+	font-size: 16px;
+	
+}
+a{
+	color: #fff;
+}
+a:hover{
+	color: #E7E7E7;
+}
+a:link{
+	color: #F4B70C;
+}
+#profil{
+	width: 70%;
+	display:block;
+  margin:auto;
+  border: 1px solid #E7E7E7;
+  margin-top: 15px;
+
+}
+@media(min-width: 767px){
+	#profil{
+	width: 40%;
+	float: right;
+	margin-top: -190px; 
+	border: 1px solid #E7E7E7;
+	}
+}
+@media(max-width: 767px){
+	.well{
+		height: 600px;
+		background-color: #5A6EAD;
+}
+	.well2{
+		height: 450px !important;
+	}
+}

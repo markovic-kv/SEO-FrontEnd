@@ -1,0 +1,13 @@
+#link-map{
+	margin: 0;
+	margin-left: 420px;
+	width: 50%;
+}
+@media (max-width: 767px){
+	#link-map{
+		display: none;
+	}
+}
+#nulamob{
+	margin-top: 450px;
+}

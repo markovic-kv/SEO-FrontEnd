@@ -1,0 +1,33 @@
+#p-img{
+	margin-top: 50px;
+	width: 70%;
+}
+.right-img {
+	width: 30%; 
+	float: right;
+	margin-top: -55px;
+	margin-bottom: 20px;
+}
+.right-img > p{
+	color: #3C4B7A;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12pt;
+	margin-left: 25px;
+}
+.right-img , p , a {
+	color: #3C4B7A;
+	text-decoration: none;
+}
+@media (max-width: 767px) {
+	#p-img{
+		display: none;
+	}
+	.right-img{
+		display: none;
+	}
+}
+@media (min-width: 767px) {
+#hide-bg{
+	display: none;
+}
+}

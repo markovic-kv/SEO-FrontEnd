@@ -1,0 +1,22 @@
+
+#an-banner{
+	margin: 100px 0px 0px 45px;
+	width: 90%;
+}
+#track-banner{
+	margin: 150px 0px 0px 45px;
+	width: 90%;
+}
+@media (max-width: 767px) {
+	#track-banner{
+		width: 100%;
+		margin: 0;
+	}
+	#an-banner{
+		display: none;
+	}
+	.container .row ol{
+		margin: 0;
+		width: 100%;
+}
+}

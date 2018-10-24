@@ -1,0 +1,9 @@
+#robot-banner{
+	margin: 70px 0px 0px 45px;
+	width: 75%;
+}
+@media (max-width: 767px) {
+	#robot-banner{
+		display: none;
+	}
+}

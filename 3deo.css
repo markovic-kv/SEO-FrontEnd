@@ -1,0 +1,8 @@
+.list-group{
+	width: 77%;
+}
+@media (max-width: 767px){
+	.list-group{
+		width: 100%;
+	}
+}

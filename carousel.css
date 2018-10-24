@@ -1,0 +1,17 @@
+.slide1, .slide2, .slide3{
+	height: 350px;
+}
+.carousel-inner{
+	background-image: url("imgs/carousel-bg.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+.carousel-caption h1{
+	font-size: 2.5em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding-bottom: .4em;
+}
+.carousel-caption p{
+	font-size: 2em;
+	font-family: 'Pacifico', cursive;
+}
